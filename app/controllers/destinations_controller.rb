@@ -4,4 +4,8 @@ class DestinationsController < ApplicationController
     @destinations = Destination.all
   end
 
+  def show
+    @destination = Destination.find(params[:id])
+  end
+
 end

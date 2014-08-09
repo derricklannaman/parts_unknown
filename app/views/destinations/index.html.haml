@@ -1,9 +1,11 @@
-%h1 Explore Your Destination
+%h1
+  Explore Your Destination
+%p Select Port of Call
 
 %ul
   - @destinations.each do |place|
     %li
-      = link_to place.name, '#', class: 'destination'
+      = link_to place.name, destination_path(place.id), class: 'destination'
 
 
 
