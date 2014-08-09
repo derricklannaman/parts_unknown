@@ -1,1 +1,9 @@
 %h1 Explore Your Destination
+
+%ul
+  - @destinations.each do |place|
+    %li
+      = link_to place.name, '#', class: 'destination'
+
+
+

@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get '/contact',       to: 'welcome#contact',  as: 'contact'
 
 
-  resources :destinations, only: :index
+  resources :destinations, only: [:index, :show]
 
 
 
