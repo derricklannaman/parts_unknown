@@ -3,7 +3,7 @@ namespace :db do
   task destination: :environment do
 
     Destination.destroy_all
-
+    Meal.destroy_all
 
     def locations
       ['Jamaica', 'Havana', 'Grand Cayman', 'Columbia', 'Peru']
@@ -13,8 +13,24 @@ namespace :db do
       locations.sample
     end
 
+    def flavor
+      ['Curry', 'Jerk', 'Spicy', 'Pepper', 'Glazed'].sample
+    end
+
+    def meat
+      ['Chicken', 'Fish', 'Goat', 'OxTails'].sample
+    end
+
     (locations.size).times do
       Destination.create(name: random_location, description: "A dreamy location")
+    end
+
+    20.times do
+      locale = Destination.all
+      random = locale.sample
+      Meal.create(name: "#{ flavor + ' ' + meat }",
+                  description: "lorem isp...",
+                  destination_id: random.id)
     end
   end
 end
