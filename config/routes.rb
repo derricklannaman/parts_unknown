@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
 
+  get 'meals/index'
+
+  get 'meals/show'
+
 # Visitor accessible pages
   root 'welcome#index'
   get '/how_it_works',  to: 'welcome#how',      as: 'how_it_works'
@@ -10,6 +14,5 @@ Rails.application.routes.draw do
 
   resources :destinations, only: [:index, :show]
 
-
-
+  resources :meals, only: [:show]
 end

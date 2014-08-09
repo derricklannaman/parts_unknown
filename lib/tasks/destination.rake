@@ -29,7 +29,7 @@ namespace :db do
       locale = Destination.all
       random = locale.sample
       Meal.create(name: "#{ flavor + ' ' + meat }",
-                  description: "lorem isp...",
+                  description: "What a lovely and beautiful lunch....",
                   destination_id: random.id)
     end
   end
