@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 
+  resources :carts
+
   get 'meals/index'
 
   get 'meals/show'
@@ -14,5 +16,8 @@ Rails.application.routes.draw do
 
   resources :destinations, only: [:index, :show]
 
+  # post '/line_items', to: 'line_items#create'
+
+  resources :line_items
   resources :meals, only: [:show]
 end

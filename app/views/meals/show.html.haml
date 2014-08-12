@@ -2,3 +2,6 @@
   = "#{@meal.name}"
 %h3
   = "#{@meal.description}"
+
+%p Get full description of meals
+= button_to 'Add to Cart', line_items_path(meal_id: @meal)
