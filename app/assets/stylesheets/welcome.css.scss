@@ -1,3 +1,13 @@
-// Place all the styles related to the welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.hero {
+  /*background: image-url('youth-football-heisman.png') no-repeat center center;*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 400px 0 250px 0;
+  /*height: auto;*/
+  margin-top: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+

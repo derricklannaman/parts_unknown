@@ -1,11 +1,6 @@
 Rails.application.routes.draw do
 
-
   resources :carts
-
-  get 'meals/index'
-
-  get 'meals/show'
 
 # Visitor accessible pages
   root 'welcome#index'
@@ -19,5 +14,5 @@ Rails.application.routes.draw do
   # post '/line_items', to: 'line_items#create'
 
   resources :line_items
-  resources :meals, only: [:show]
+  resources :meals, only: [:index, :show]
 end

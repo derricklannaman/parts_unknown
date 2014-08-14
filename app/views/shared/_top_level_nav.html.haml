@@ -1,4 +1,7 @@
-.nav
-  = link_to 'how it works', how_it_works_path
-  = link_to 'about', about_path
-  = link_to 'contact', contact_path
+%header#top-level-header
+  .nav
+    =# link_to(image_tag('rails.png'), root_path)
+    = link_to 'HOME', root_path, class: 'nav-panel'
+    = link_to 'how it works', how_it_works_path, class: 'nav-panel'
+    = link_to 'about', about_path, class: 'nav-panel'
+    = link_to 'contact', contact_path, class: 'nav-panel'
