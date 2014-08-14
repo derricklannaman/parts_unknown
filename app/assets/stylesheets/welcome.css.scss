@@ -1,13 +1,14 @@
-.hero {
-  /*background: image-url('youth-football-heisman.png') no-repeat center center;*/
+#welcome-top {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 400px 0 250px 0;
-  /*height: auto;*/
+  padding: 105px 0;
   margin-top: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
+}
+
+%section.featured {
+  padding-bottom: 150px;
+  border: 1px solid red;
 }
 

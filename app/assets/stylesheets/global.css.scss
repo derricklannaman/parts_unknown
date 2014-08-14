@@ -5,17 +5,31 @@
 }
 
 body {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#2C4D94), to(#FFF));
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($main-blue), to(#FFF));
   background-repeat: no-repeat;
 }
 
 #top-level-header {
-  border-top: 3px solid $sky-blue-border;
-  /*margin-left: -8px;*/
-  /*margin-right: : -8px;*/
-  /*margin-top: -10px;*/
-  .nav {
-    padding: 10px;
+  background-color: $mid-blue;
+  float: left;
+  width: 100%;
+  a.nav-panel {
+    border-top: 4px solid $sky-blue-border;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid $main-blue-light-10;
+    color: #FFF;
+    font-size: 1.2em;
+    margin: 0px;
+    float: left;
+    width: 237px;
+    padding: 30px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      border-top: 4px solid $top-border-active;
+      background-color: $mid-blue-light-5;
+    }
   }
 }
 

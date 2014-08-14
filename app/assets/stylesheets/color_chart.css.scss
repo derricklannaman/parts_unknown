@@ -4,10 +4,13 @@
 
 /*Global variables*/
 
+$main-blue:           #2C4D94;
+$main-blue-light-10:  lighten($main-blue, 10%);
+
 $top-border-active:   #A2D230;
 $sky-blue-border:     #68B5E3;
-
-
+$mid-blue:            #4D73B0;
+$mid-blue-light-5:    lighten($mid-blue, 5%);
 
 /*
 $go-green:           #76cc66;
