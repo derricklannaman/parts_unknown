@@ -13,6 +13,7 @@ body {
   background-color: $mid-blue;
   float: left;
   width: 100%;
+  box-shadow: 0px 4px 6px $main-blue-dark-5;
   a.nav-panel {
     border-top: 4px solid $sky-blue-border;
     border-left: 1px solid rgba(255, 255, 255, 0.1);
