@@ -1,9 +1,29 @@
 #welcome-top
-  %section.featured
-    = image_tag('youth-football-heisman.png', size: '900x500')
+  %h1.welcome-blurb Cultural Cuisine Discovery
 
-%h3 Cultural Cuisine Discovery
+  %section.jumbo-intro
+    .featured
+      .image
+        = image_tag('hero-image1.jpg', size: '798x298')
+      .dish
+        .image
+          = image_tag('hero-image1.jpg', size: '250x150')
+        .description
+          %h1 Featured Meal from Destination
+          %p
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    .greeting
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-
-
-= link_to "Choose Destination", 'destinations', class: 'destination-btn'
+      = link_to "Choose Destination", 'destinations', class: 'destination-btn'

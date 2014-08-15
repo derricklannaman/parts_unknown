@@ -7,17 +7,20 @@
 body {
   background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($main-blue), to(#FFF));
   background-repeat: no-repeat;
+  max-width: 1300px;
+  margin: 0 auto;
+  /*padding: 105px 0;*/
+  margin-top: 20px;
 }
 
 #top-level-header {
-  background-color: $mid-blue;
-  float: left;
-  width: 1295px;
-  box-shadow: 0px 4px 6px $main-blue-dark-5;
+  max-width: 1295px;
+  margin: 0 auto;
+  height: 82px;
   a.nav-panel {
+    box-shadow: 0px 4px 6px $main-blue-dark-5;
+    background-color: $mid-blue;
     border-top: 4px solid $sky-blue-border;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    border-right: 1px solid $main-blue-light-10;
     color: #FFF;
     font-size: 1.2em;
     margin: 0px;
@@ -30,6 +33,7 @@ body {
     &:hover {
       border-top: 4px solid $top-border-active;
       background-color: $mid-blue-light-5;
+      box-shadow: 0px 7px 21px $main-blue-dark-5;
     }
   }
 }

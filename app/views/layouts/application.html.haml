@@ -7,7 +7,7 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    .container
+      = render 'shared/top_level_nav'
 
-    = render 'shared/top_level_nav'
-
-    = yield
+      = yield
