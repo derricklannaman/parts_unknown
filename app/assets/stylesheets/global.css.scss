@@ -1,15 +1,18 @@
 @import 'color_chart';
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700|Syncopate:700);
 
 .red {
   border: 1px solid red;
 }
 
+html {
+  background: -webkit-radial-gradient(circle, #67B8AA, $main-blue);
+  font-family: "Lato", verdana, arial, helvetica, sans-serif;
+}
+
 body {
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from($main-blue), to(#FFF));
-  background-repeat: no-repeat;
-  max-width: 1300px;
+  width: 1286px;
   margin: 0 auto;
-  /*padding: 105px 0;*/
   margin-top: 20px;
 }
 
