@@ -13,6 +13,23 @@ $sky-blue-border:     #68B5E3;
 $mid-blue:            #4D73B0;
 $mid-blue-light-5:    lighten($mid-blue, 5%);
 
+$sea-green:           #67B8AA;
+$sea-green-dark-10:   darken($sea-green, 10%);
+
+/* 50 Shades of Grey */
+$steel:                   #495563;
+$steel-light-10:          lighten($steel, 10%);
+$steel-light-20:          lighten($steel, 20%);
+$steel-light-25:          lighten($steel, 25%);
+$steel-light-30:          lighten($steel, 30%);
+$steel-light-40:          lighten($steel, 40%);
+$steel-light-50:          lighten($steel, 50%);
+$steel-light-55:          lighten($steel, 55%);
+$steel-light-on-dark-60:  lighten($steel, 60%);
+$steel-light-65:          lighten($steel, 65%);
+
+
+
 /*
 $go-green:           #76cc66;
 $go-green-30:        lighten($go-green, 30%);

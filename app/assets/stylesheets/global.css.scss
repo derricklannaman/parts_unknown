@@ -16,6 +16,16 @@ body {
   margin-top: 20px;
 }
 
+a {
+  color: #FFF;
+}
+
+p, ol, ul, td {
+  font-family: "Lato", verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
 #top-level-header {
   max-width: 1295px;
   margin: 0 auto;

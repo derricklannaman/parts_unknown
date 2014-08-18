@@ -13,31 +13,58 @@ h1.welcome-blurb {
 
 section.jumbo-intro {
   float: left;
+  box-shadow: 0px 4px 6px $main-blue-dark-5;
+  background-color: $mid-blue-light-5;
   .featured {
     float: left;
+    position: relative;
+    z-index: 1;
     width: 800px;
-    border: 1px solid #FF0;
-    height: 500px;
+    height: 515px;
+    box-shadow: 1px 0px 5px $main-blue-dark-5;
     .dish {
-      margin-top: -18px;
-      height: 198px;
+      margin-top: -23px;
+      padding-bottom: 19px;
       background-color: #FFF;
     }
   }
   .greeting {
     float: left;
-    padding: 7px;
+    position: relative;
+    z-index: 0;
+    padding: 7px 7px 0px 7px;
     width: 470px;
-    height: 487px;
-    background-color: $main-blue-dark-5;
+    border-top: 2px solid $top-border-active;
     p {
       color: #FFF;
     }
   }
 }
 
+a.destination-btn {
+  margin-top: 233px;
+  background-color: $sky-blue-border;
+  float: left;
+  margin-left: -7px;
+  padding: 40px;
+  width: 403px;
+  text-align: center;
+  font-size: 2em;
+  text-decoration: none;
+  border-top: 2px solid rgba(255,255,255, 0.3);
+}
+
+.lead-header {
+  margin-top: 20px;
+  padding-top: 14px;
+  font-size: 1.6em;
+  font-weight: bolder;
+  color: $sea-green-dark-10;
+}
+
 .featured .dish .image {
-  border: 1px solid #FFA500;
+  border: 12px solid #FFF;
+  box-shadow: 0px 0px 15px 1px #CCC;
   float: left;
   width: 250px;
   height: 150px;
