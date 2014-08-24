@@ -8,7 +8,7 @@
 %ul#location-list
   - @destinations.each do |place|
     %li
-      = link_to place.name, destination_path(place.id), class: 'destination'
+      = link_to place.name, destination_path(place.id), remote: true, class: 'destination'
 
 
 

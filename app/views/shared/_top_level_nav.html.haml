@@ -1,6 +1,6 @@
 %header#top-level-header
   = link_to 'HOME', root_path, class: 'nav-panel'
-  = link_to 'destinations', destinations_path, class: 'nav-panel'
+  = link_to('destinations', destinations_path, 'data-no-turbolink' => true, class: 'nav-panel')
   = link_to 'how it works', how_it_works_path, class: 'nav-panel'
   = link_to 'about', about_path, class: 'nav-panel'
   = link_to 'contact', contact_path, class: 'nav-panel'
