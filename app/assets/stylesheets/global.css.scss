@@ -51,6 +51,44 @@ p, ol, ul, td {
   }
 }
 
+
+footer {
+  #main {
+    width: 1286px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    background-color: $main-blue;
+    background: -webkit-radial-gradient(circle, #67B8AA, $main-blue);
+    border: 3px solid rgba(255,255,255, 0.1);
+    box-shadow: 0px 4px 6px $main-blue-dark-5;
+    float: left;
+    section {
+      width: 400px;
+      height: 100px;
+      margin: 10px;
+      float: left;
+    }
+  }
+}
+
+#more-company-info,
+#company-culture,
+#social-links {
+  text-align: center;
+  line-height: 20px;
+  text-transform: uppercase;
+  li a  {
+    text-align: center;
+    margin-top: 4px;
+    font-size: 15px;
+    text-decoration: none;
+    opacity: 0.5;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
 li {
   text-decoration: none;
   list-style: none;
