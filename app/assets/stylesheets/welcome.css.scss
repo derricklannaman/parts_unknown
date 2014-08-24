@@ -1,5 +1,14 @@
 @import 'color_chart';
 
+div#promo {
+  background-color: $sea-green;
+  max-width: 1295px;
+  margin: 0 auto;
+  height: 28px;
+  margin-bottom: 5px;
+  margin-top: -20px;
+}
+
 #welcome-top {
   margin-top: 20px;
 }
@@ -186,6 +195,7 @@ section.benefits {
   margin-bottom: 155px;
   text-align: left;
   z-index: 2;
+  /*opacity: .8;*/
 }
 
 .benefit-explanation {
@@ -196,6 +206,28 @@ section.benefits {
   border-top: 1px solid rgba(38,67,128, 0.3);
 }
 
+
+#map3d {
+  width: 1282px;
+  float: left;
+  padding: 10px;
+  margin-bottom: 25px;
+}
+
+#location-list {
+  border: 3px solid rgba(255,255,255, 0.1);
+  width: 1282px;
+  float: left;
+  padding: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0px 4px 6px $main-blue-dark-5;
+
+
+  height: 500px;
+  position: relative;
+  z-index: 1000;
+  top: -558px;
+}
 
 
 

@@ -1,11 +1,14 @@
-%h1
+.jumbo-header
   Explore Your Destination
-%p Select Port of Call
 
-%ul
+
+%section#fly-over-map
+  #map3d{:style => "height: 500px; width: 1282px;"}
+
+%ul#location-list
   - @destinations.each do |place|
     %li
-      = link_to place.name, destination_path(place.id), class: 'destination'
+      = link_to place.name, destination_path(place.id), remote: true, class: 'destination'
 
 
 
