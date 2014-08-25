@@ -3,28 +3,12 @@
   %head
     %title PartsUnknown
     %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
-
     %script{:src => "https://www.google.com/jsapi", :type => "text/javascript"} :cdata
-    :javascript
-      var ge;
-      google.load("earth", "1", {"other_params":"sensor=false"});
-
-      function init() {
-        google.earth.createInstance('map3d', initCB, failureCB);
-      }
-
-      function initCB(instance) {
-        ge = instance;
-        ge.getWindow().setVisibility(true);
-      }
-
-      function failureCB(errorCode) {
-      }
-      google.setOnLoadCallback(init);
-
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+
+    = render 'shared/load_google_earth'
   %body
     .container
       = render 'shared/top_level_nav'
