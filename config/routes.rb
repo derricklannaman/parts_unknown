@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   get '/contact',       to: 'welcome#contact',  as: 'contact'
 
 
-  resources :destinations, only: [:index, :show]
+  resources :destinations
 
   # post '/line_items', to: 'line_items#create'
 
