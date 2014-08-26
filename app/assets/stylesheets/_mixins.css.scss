@@ -1,0 +1,6 @@
+@import 'color_chart';
+
+
+@mixin default_box_shadow {
+  box-shadow: 0px 4px 6px $main-blue-dark-5;
+}

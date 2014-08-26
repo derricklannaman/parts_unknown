@@ -1,3 +1,6 @@
+@import 'mixins';
+
+
 li {
   text-decoration: none;
   list-style: none;
@@ -6,16 +9,16 @@ li {
 .destination {
   float: left;
   margin: 10px;
-  width: 200px;
-  border: 1px solid #999;
+  width: 400px;
   height: 300px;
+  @include default_box_shadow;
 }
 
 .invisible {
   opacity: 0;
 }
 
-
 #map3d {
-  /*margin-left: -2000px;*/
+  width: 1282px;
+  height: 500px;
 }
