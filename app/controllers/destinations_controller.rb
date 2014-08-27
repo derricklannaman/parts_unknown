@@ -4,6 +4,19 @@ class DestinationsController < ApplicationController
     @destinations = Destination.all
   end
 
+  def new
+    @destination = Destination.new
+  end
+
+  def create
+    @destination = Destination.new(destination_params)
+    if @destination.save
+      redirect_to @destination
+    else
+      render 'new'
+    end
+  end
+
   def show
     @destination = Destination.find(params[:id])
     @meals = @destination.meals

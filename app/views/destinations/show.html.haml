@@ -8,16 +8,8 @@
         = link_to meal.name, meal_path(meal), class: 'dish-profile'
 
 
-
 = form_for(@destination, :url => destination_path(@destination.id), :html => { :multipart => true }) do |f|
-  - if @destination.errors.any?
-    #error_explanation
-      %h2
-        = pluralize(@destination.errors.count, "error")
-        prohibited this destination from being saved:
-      %ul
-        - @destination.errors.full_messages.each do |msg|
-          %li= msg
+
   .field
     = f.label :name
     = f.text_field :name

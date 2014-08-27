@@ -1,0 +1,14 @@
+%h1 Add New Destination
+
+= form_for @destination, :url => destinations_path, :html => { :multipart => true } do |f|
+
+  .field
+    = f.label :name
+    = f.text_field :name
+  .field
+    = f.label :destination_image
+    = f.file_field :destination_image
+  .actions
+    = f.submit 'add image'
+
+

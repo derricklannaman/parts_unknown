@@ -8,5 +8,4 @@
 %ul#location-list
   - @destinations.each do |place|
     %li
-      = link_to place.name, destination_path(place.id), class: 'destination'
-
+      = link_to image_tag(place.destination_image.url(:medium)), destination_path(place.id), class: 'destination'
