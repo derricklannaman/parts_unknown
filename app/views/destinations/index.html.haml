@@ -7,5 +7,6 @@
 
 %ul#location-list
   - @destinations.each do |place|
-    %li
-      = link_to image_tag(place.destination_image.url(:medium)), destination_path(place.id), class: 'destination'
+    .destination-wrapper
+      %li
+        = link_to image_tag(place.destination_image.url(:medium)), destination_path(place.id), class: 'destination-image'
