@@ -2,6 +2,8 @@ class DestinationsController < ApplicationController
 
   def index
     @destinations = Destination.all
+    # @meals = @destination.meals
+    @dish_count = 10
   end
 
   def new
