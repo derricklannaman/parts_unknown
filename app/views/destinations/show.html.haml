@@ -8,14 +8,13 @@
         = link_to meal.name, meal_path(meal), class: 'dish-profile'
 
 
-= form_for(@destination, :url => destination_path(@destination.id), :html => { :multipart => true }) do |f|
+/ = form_for(@destination, :url => destination_path(@destination.id), :html => { :multipart => true }) do |f|
 
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :destination_image
-    = f.file_field :destination_image
-  .actions
-    = f.submit 'add image'
-    =# link_to 'Nevermind', friends_path, class: 'button'
+/   .field
+/     = f.label :name
+/     = f.text_field :name
+/   .field
+/     = f.label :destination_image
+/     = f.file_field :destination_image
+/   .actions
+/     = f.submit 'add image'
