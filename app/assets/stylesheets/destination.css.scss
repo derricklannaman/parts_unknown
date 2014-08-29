@@ -13,7 +13,8 @@ li {
   margin-bottom: 25px;
 }
 
-#location-list {
+#location-list,
+section.list-meals {
   border: 3px solid rgba(255,255,255, 0.1);
   width: 1282px;
   float: left;
@@ -24,6 +25,12 @@ li {
   z-index: 1000;
   top: -558px;
 }
+
+section.list-meals {
+   z-index: 0;
+   top: 0;
+}
+
 
 .destination-wrapper {
   float: left;
